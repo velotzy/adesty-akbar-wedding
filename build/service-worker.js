@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/AdestyAkbarWedd/precache-manifest.7688901cf299d1adfc65f21804691b20.js"
+  "/adesty-akbar-wedding/precache-manifest.b56f236177951d3a9af2f73000bc197f.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/AdestyAkbarWedd/index.html", {
+workbox.routing.registerNavigationRoute("/adesty-akbar-wedding/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
