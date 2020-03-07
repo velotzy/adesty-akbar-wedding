@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/adesty-akbar-wedding/static/media/groom.c8b987d1.jpg"
   },
   {
-    "revision": "fd58ca064ec94f319399b194c0b2a939",
+    "revision": "3a9ba015c7ff573e9e6fc73dc652533b",
     "url": "/adesty-akbar-wedding/index.html"
   }
 ];
