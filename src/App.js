@@ -9,8 +9,9 @@ import FourthPage from './pages/fourthpage'
 import Frame from './components/frame'
 
 const children = [
-    <div className="page">
+    <div className="page cover">
         <Cover />
+        <img src={require('./img/swipeup.gif')} style={{height: 30, width: 35, position: 'absolute', bottom: 10}} />
     </div>,
     <div className="page">
         <Frame >

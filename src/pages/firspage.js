@@ -23,35 +23,28 @@ class FirstPage extends React.Component {
             Dengan memohon rahmat dan ridho Allah SWT, <br />Kami akan menyelenggarakan resepsi pernikahan Putra-Putri kami </p>
         </div>
         <div >
-          <table style={{ width: '100%' }}>
-            <tr>
-              <td style={{ textAlign: 'left', width: 105, paddingTop: 5, textAlign: 'center' }}>
-                <img src={require('../img/bride.jpg')} style={{ borderRadius: 5, width: 100, height: 100, objectFit: 'cover' }} />
-              </td>
-              <td style={{ textAlign: 'center', verticalAlign: 'top', fontFamily: 'EB Garamond' }}>
-                <span className={'brides-name'} >Adesty Nanda F. S.Fis. Ftr</span>
-                <div style={{ marginBottom: -5, marginTop: -5 }}>
-                  <img src={require('../img/line.png')} style={{ width: '50%' }} />
-                </div>
-                <p className={'parent-name'} >Putri<br />Bpk. Anton Joko Priyono <br />&<br /> Ibu Umi Sutarti</p>
-              </td>
-            </tr>
-          </table>
-          <div className='and' style={{ color: '#888', fontSize: 30, textAlign: 'center' }}>Dengan</div>
-          <table style={{ width: '100%' }}>
-            <tr>
-              <td style={{ textAlign: 'center', verticalAlign: 'top', fontFamily: 'EB Garamond' }}>
-                <span className={'brides-name'} >Annovika W. Akbar S.Ikom</span>
-                <div style={{ marginBottom: -5, marginTop: -5 }}>
-                  <img src={require('../img/line.png')} style={{ width: '50%' }} />
-                </div>
-                <p className={'parent-name'}>Putra<br />Bpk. Sukatno <br />&<br /> Ibu Anik Yuniati</p>
-              </td>
-              <td style={{ textAlign: 'left', width: 105, paddingTop: 5, textAlign: 'center' }}>
-                <img src={require('../img/groom.jpg')} style={{ borderRadius: 5, width: 100, height: 100, objectFit: 'cover' }} />
-              </td>
-            </tr>
-          </table>
+          <div>
+            <div className={'brides-name'} style={{ textAlign: 'center' }}>
+              Adesty Nanda F. S.Fis. Ftr <br />
+              <img src={require('../img/line.png')} style={{ width: '70%' }} />
+            </div>
+            <div style={{ flexDirection: 'row', display: 'flex' }}>
+              <img src={require('../img/bride.jpg')} style={{ borderRadius: 50, width: 100, height: 100, objectFit: 'cover' }} />
+              <p style={{ marginLeft: 20 }} className={'parent-name'} >Putri<br />Bpk. Anton Joko Priyono <br />&<br /> Ibu Umi Sutarti</p>
+            </div>
+          </div>
+          <div className='and'>Dengan</div>
+
+          <div>
+            <div className={'brides-name'} style={{ textAlign: 'center' }}>
+              Annovika W. Akbar S.Ikom <br />
+              <img src={require('../img/line.png')} style={{ width: '70%' }} />
+            </div>
+            <div style={{ flexDirection: 'row', display: 'flex', textAlign: 'right', justifyContent: 'flex-end' }}>
+              <p style={{ marginRight: 20 }} className={'parent-name'}>Putra<br />Bpk. Sukatno <br />&<br /> Ibu Anik Yuniati</p>
+              <img src={require('../img/groom.jpg')} style={{ borderRadius: 50, width: 100, height: 100, objectFit: 'cover' }} />
+            </div>
+          </div>
         </div>
       </div>
     )

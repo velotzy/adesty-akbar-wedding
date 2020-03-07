@@ -1,9 +1,9 @@
 {
-  "main.css": "/adesty-akbar-wedding/static/css/main.186e49c8.chunk.css",
-  "main.js": "/adesty-akbar-wedding/static/js/main.1ef43204.chunk.js",
-  "main.js.map": "/adesty-akbar-wedding/static/js/main.1ef43204.chunk.js.map",
-  "static/js/1.26e616b7.chunk.js": "/adesty-akbar-wedding/static/js/1.26e616b7.chunk.js",
-  "static/js/1.26e616b7.chunk.js.map": "/adesty-akbar-wedding/static/js/1.26e616b7.chunk.js.map",
+  "main.css": "/adesty-akbar-wedding/static/css/main.20ebb5a0.chunk.css",
+  "main.js": "/adesty-akbar-wedding/static/js/main.939c463b.chunk.js",
+  "main.js.map": "/adesty-akbar-wedding/static/js/main.939c463b.chunk.js.map",
+  "static/js/1.428a505c.chunk.js": "/adesty-akbar-wedding/static/js/1.428a505c.chunk.js",
+  "static/js/1.428a505c.chunk.js.map": "/adesty-akbar-wedding/static/js/1.428a505c.chunk.js.map",
   "runtime~main.js": "/adesty-akbar-wedding/static/js/runtime~main.43bcd2a0.js",
   "runtime~main.js.map": "/adesty-akbar-wedding/static/js/runtime~main.43bcd2a0.js.map",
   "static/media/App.css": "/adesty-akbar-wedding/static/media/marble_gold_bg.760cfd21.jpg",
@@ -11,8 +11,10 @@
   "static/media/pembuka1.png": "/adesty-akbar-wedding/static/media/pembuka1.48b02996.png",
   "static/media/bride.jpg": "/adesty-akbar-wedding/static/media/bride.8f9d40e9.jpg",
   "static/media/groom.jpg": "/adesty-akbar-wedding/static/media/groom.c8b987d1.jpg",
-  "static/css/main.186e49c8.chunk.css.map": "/adesty-akbar-wedding/static/css/main.186e49c8.chunk.css.map",
+  "static/media/top-leftW300.png": "/adesty-akbar-wedding/static/media/top-leftW300.51d488be.png",
+  "static/media/bottom-rightW300.png": "/adesty-akbar-wedding/static/media/bottom-rightW300.94007c20.png",
+  "static/css/main.20ebb5a0.chunk.css.map": "/adesty-akbar-wedding/static/css/main.20ebb5a0.chunk.css.map",
   "index.html": "/adesty-akbar-wedding/index.html",
-  "precache-manifest.317de98f44bf01c77aeb9ec3d34c96c0.js": "/adesty-akbar-wedding/precache-manifest.317de98f44bf01c77aeb9ec3d34c96c0.js",
+  "precache-manifest.70af57305def41eec159385c31eac152.js": "/adesty-akbar-wedding/precache-manifest.70af57305def41eec159385c31eac152.js",
   "service-worker.js": "/adesty-akbar-wedding/service-worker.js"
 }

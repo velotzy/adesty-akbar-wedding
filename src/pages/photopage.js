@@ -9,19 +9,18 @@
 'use strict'
 
 import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-class Cover extends React.Component {
-  render () {
+class PhotoPage extends React.Component {
+  render() {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <LazyLoadImage
-          height={'95%'}
-          src={require('../img/cover.png')}
-          width={'95%'} />
+      <div >
+        <h1 style={{ color: '#000', fontSize: 15, margin: 'auto', textAlign: 'center' }}>&#10070; HALAMAN FOTO &#10070;</h1>
+        <div >
+
+        </div>
       </div>
     )
   }
 }
 
-export default Cover
+export default PhotoPage

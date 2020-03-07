@@ -23,8 +23,10 @@ class FourthPage extends React.Component {
             <i>Wasalammu'alaikum Warahmatulahi Wabarakatuh</i>
           </p>
         </div>
-        <div >
-
+        <div style={{ position: 'absolute', bottom: '20%', textAlign: 'center', borderWidth: 'solid' }}>
+          <p className={'intro-text'}>
+            support by @singolawu.id
+          </p>
         </div>
       </div>
     )
