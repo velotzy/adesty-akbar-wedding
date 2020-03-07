@@ -4,19 +4,33 @@ import './App.css';
 import Cover from './pages/cover';
 import FirstPage from './pages/firspage';
 import SecondPage from './pages/secondpage';
+import ThirdPage from './pages/thirdpage'
+import FourthPage from './pages/fourthpage'
+import Frame from './components/frame'
 
 const children = [
     <div className="page">
         <Cover />
     </div>,
     <div className="page">
-        <FirstPage />
+        <Frame >
+            <FirstPage />
+        </Frame>
     </div>,
     <div className="page">
-        <SecondPage />
+        <Frame >
+            <SecondPage />
+        </Frame>
     </div>,
     <div className="page">
-        <h2><span>Snap</span><span>Scroll</span></h2>
+        <Frame>
+            <ThirdPage />
+        </Frame>
+    </div>,
+    <div className="page">
+        <Frame>
+            <FourthPage />
+        </Frame>
     </div>
 ];
 

@@ -13,7 +13,7 @@ import React from 'react'
 class SecondPage extends React.Component {
   render () {
     return (
-      <div style={{ width: 'device-width', margin: 'auto' }}>
+      <div >
         <h1 style={{ color: '#000', fontSize: 15, margin: 'auto', textAlign: 'center' }}>&#10070; RANGKAIAN ACARA &#10070;</h1>
         <div style={{ fontSize: 14, color: '#000' }}>
           <div style={{ color: '#c79931', padding: 5, fontSize: 18, textAlign: 'center' }}>Resepsi</div>
