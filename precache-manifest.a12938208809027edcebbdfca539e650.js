@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9adb909ff659f3713f2f",
-    "url": "/adesty-akbar-wedding/static/css/main.50a4b2f5.chunk.css"
+    "revision": "50c7a8aff76aac8a2917",
+    "url": "/adesty-akbar-wedding/static/css/main.602cda60.chunk.css"
   },
   {
-    "revision": "9adb909ff659f3713f2f",
-    "url": "/adesty-akbar-wedding/static/js/main.9adb909f.chunk.js"
+    "revision": "50c7a8aff76aac8a2917",
+    "url": "/adesty-akbar-wedding/static/js/main.50c7a8af.chunk.js"
   },
   {
     "revision": "f99283b47904002f616b",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/adesty-akbar-wedding/static/js/runtime~main.43bcd2a0.js"
   },
   {
-    "revision": "760cfd21c8869c58f4fa5f5162c995bc",
-    "url": "/adesty-akbar-wedding/static/media/marble_gold_bg.760cfd21.jpg"
+    "revision": "5d56c655e65d157247dc6e7e4f35f30e",
+    "url": "/adesty-akbar-wedding/static/media/bg_marble_2.5d56c655.jpg"
   },
   {
     "revision": "ea980b612416532af02b0c091a2701d1",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/adesty-akbar-wedding/static/media/swipeup.376e25f7.gif"
   },
   {
-    "revision": "53897d2cf58d05252bbc71440b36e845",
+    "revision": "300276b497da6899290ce3cf62516fac",
     "url": "/adesty-akbar-wedding/index.html"
   }
 ];
