@@ -16,6 +16,7 @@ class Cover extends React.Component {
     return (
       <div style={{ textAlign: 'center' }}>
         <LazyLoadImage
+          effect={'blur'}
           height={'95%'}
           src={require('../img/cover.png')}
           width={'95%'} />
