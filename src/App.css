@@ -14,7 +14,9 @@ body {
 
     font-family: 'Courier New', serif;
 
-    background-image: url('./img/marble_gold_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./img/bg_marble_2.jpg');
 
 }
 
