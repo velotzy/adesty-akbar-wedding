@@ -24,11 +24,12 @@ class ThirdPage extends React.Component {
       <div>
         <h1 style={{ color: '#000', fontSize: 15, margin: 'auto', textAlign: 'center' }}>&#10070; LOKASI ACARA &#10070;</h1>
         <div>
-          <iframe
-            width={'100%'}
-            height={'100%'}
-            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDEVtDo5e0Oxo_RVI7qflfYrRPNPLhv4XU&&center=-7.190360,111.392390&zoom=17" >
-          </iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.221006278232!2d111.39153963474858!3d-7.1902999992401275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTEnMjUuMSJTIDExMcKwMjMnMzIuNiJF!5e0!3m2!1sen!2sid!4v1583665603450!5m2!1sen!2sid"
+          width="400"
+          height="400"
+          frameborder={0}
+          style={{border: 0}}></iframe>
         </div>
       </div>
     )
