@@ -14,9 +14,9 @@ import Slider from 'react-animated-slider';
 class PhotoPage extends React.Component {
   render() {
     return (
-      <div >
+      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         {/* <h1 style={{ color: '#000', fontSize: 15, margin: 'auto', textAlign: 'center', }}>&#10070; FOTO SESSION &#10070;</h1> */}
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div>
           <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
             <img src={require('../img/listPhoto/thumbnails/photo_1.jpg')} style={{ maxWidth: '28%', height: 'auto', marginRight: '2%' }} />
             <img src={require('../img/listPhoto/thumbnails/photo_2.jpg')} style={{ maxWidth: '70%', height: 'auto' }} />
