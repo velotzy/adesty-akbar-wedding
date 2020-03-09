@@ -15,8 +15,8 @@ class PhotoPage extends React.Component {
   render() {
     return (
       <div >
-        <h1 style={{ color: '#000', fontSize: 15, margin: 'auto', textAlign: 'center', }}>&#10070; FOTO - FOTO &#10070;</h1>
-        <div style={{marginTop: 20}}>
+        {/* <h1 style={{ color: '#000', fontSize: 15, margin: 'auto', textAlign: 'center', }}>&#10070; FOTO SESSION &#10070;</h1> */}
+        <div style={{ marginTop: 20 }}>
           <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
             <img src={require('../img/listPhoto/thumbnails/photo_1.jpg')} style={{ maxWidth: '28%', height: 'auto', marginRight: '2%' }} />
             <img src={require('../img/listPhoto/thumbnails/photo_2.jpg')} style={{ maxWidth: '70%', height: 'auto' }} />
@@ -27,10 +27,12 @@ class PhotoPage extends React.Component {
             </div>
             <img src={require('../img/listPhoto/thumbnails/photo_3.jpg')} style={{ maxWidth: '58%', height: 'auto', marginLeft: '2%' }} />
           </div>
-          <div>
-            <img src={require('../img/listPhoto/thumbnails/photo_4.jpg')} style={{ maxWidth: '32%', height: 'auto' }}/>
-            <img src={require('../img/listPhoto/thumbnails/photo_5.jpg')} style={{ maxWidth: '32%', height: 'auto', marginLeft: '2%' }}/>
-            <img src={require('../img/listPhoto/thumbnails/photo_6.jpg')} style={{ maxWidth: '32%', height: 'auto', marginLeft: '2%' }}/>
+          <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
+            <img src={require('../img/listPhoto/thumbnails/photo_4.jpg')} style={{ maxWidth: '49%', height: 'auto' }} />
+            <img src={require('../img/listPhoto/thumbnails/photo_6.jpg')} style={{ maxWidth: '49%', height: 'auto', marginLeft: '2%' }} />
+          </div>
+          <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
+            <img src={require('../img/listPhoto/thumbnails/photo_5.jpg')} style={{ maxWidth: '100%', height: 'auto' }} />
           </div>
         </div>
         {/* <Slider>
