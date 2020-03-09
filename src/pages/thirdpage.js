@@ -30,7 +30,7 @@ class ThirdPage extends React.Component {
           style={{ border: '1px solid #ddd', borderRadius: 5 }}></iframe>
         </div>
         <a href={'https://goo.gl/maps/UskXUCimvezjqV7A9'}>
-          <button style={{border: '1px solid #4A89F3', height: 40, width: 100, borderRadius: 20, backgroundColor: '#4A89F3', color: 'white'}}>
+          <button style={{border: '1px solid #4A89F3', height: 25, width: 100, borderRadius: 20, backgroundColor: '#4A89F3', color: 'white'}}>
             Buka Gmaps
           </button>
         </a>

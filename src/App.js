@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReactSnapScroll from 'react-snap-scroll';
+import Firebase from 'firebase';
+import config from './config';
+
 import './App.css';
 import Cover from './pages/cover';
 import FirstPage from './pages/firspage';
@@ -8,45 +11,35 @@ import ThirdPage from './pages/thirdpage'
 import FourthPage from './pages/fourthpage'
 import PhotoPage from './pages/photopage'
 import Frame from './components/frame'
-
-const children = [
-    <div className="page cover">
-        <Cover />
-        <img src={require('./img/swipeup.gif')} style={{height: 30, width: 35, position: 'absolute', bottom: 10}} />
-    </div>,
-    <div className="page">
-        <Frame >
-            <FirstPage />
-        </Frame>
-    </div>,
-    <div className="page">
-        <Frame >
-            <SecondPage />
-        </Frame>
-    </div>,
-    <div className="page">
-        <Frame>
-            <ThirdPage />
-        </Frame>
-    </div>,
-    <div className="page">
-        <Frame>
-            <PhotoPage />
-        </Frame>
-    </div>,
-    <div className="page">
-        <Frame>
-            <FourthPage />
-        </Frame>
-    </div>
-];
+import FormPage from './pages/form';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+            transition: 'move-top-bottom',
+            index: 0,
+        }
+      }
 
-    state = {
-        transition: 'move-top-bottom',
-        index: 0,
-    }
+    componentDidMount() {
+        Firebase.initializeApp(config);
+        this.getData()
+      }
+      writeData = (data) => {
+        Firebase.database().ref('/wedding-attendance').push(data);
+        console.log('DATA SAVED');
+      }
+    
+      getData = () => {
+        let ref = Firebase.database().ref('/wedding-attendance');
+        ref.on('value', snapshot => {
+          const state = snapshot.val();
+          console.log('DATA RETRIEVED', state);
+        });
+    
+      }
 
     transitionChanged = e => {
         this.setState({ [e.target.name]: e.target.value });
@@ -60,6 +53,45 @@ class App extends Component {
 
         const { transition, index } = this.state;
 
+        const children = [
+            <div className="page cover">
+                <Cover />
+                <img src={require('./img/swipeup.gif')} style={{height: 30, width: 35, position: 'absolute', bottom: 10}} />
+            </div>,
+            <div className="page">
+                <Frame >
+                    <FirstPage />
+                </Frame>
+            </div>,
+            <div className="page">
+                <Frame >
+                    <SecondPage />
+                </Frame>
+            </div>,
+            <div className="page">
+                <Frame>
+                    <ThirdPage />
+                </Frame>
+            </div>,
+            <div className="page">
+                <Frame>
+                    <PhotoPage />
+                </Frame>
+            </div>,
+            <div className="page">
+            <Frame>
+                <FormPage 
+                    getData={this.getData}
+                    writeData={this.writeData}
+                />
+            </Frame>
+        </div>,
+            <div className="page">
+                <Frame>
+                    <FourthPage />
+                </Frame>
+            </div>
+        ];
         return (
             <div className="App">
                 <ReactSnapScroll
