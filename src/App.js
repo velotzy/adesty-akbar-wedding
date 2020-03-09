@@ -6,6 +6,7 @@ import FirstPage from './pages/firspage';
 import SecondPage from './pages/secondpage';
 import ThirdPage from './pages/thirdpage'
 import FourthPage from './pages/fourthpage'
+import PhotoPage from './pages/photopage'
 import Frame from './components/frame'
 
 const children = [
@@ -26,6 +27,11 @@ const children = [
     <div className="page">
         <Frame>
             <ThirdPage />
+        </Frame>
+    </div>,
+    <div className="page">
+        <Frame>
+            <PhotoPage />
         </Frame>
     </div>,
     <div className="page">

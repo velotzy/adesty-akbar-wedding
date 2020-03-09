@@ -28,8 +28,8 @@ class FirstPage extends React.Component {
               Adesty Nanda F. S.Fis. Ftr <br />
               <img src={require('../img/line.png')} style={{ width: '70%' }} />
             </div>
-            <div style={{ flexDirection: 'row', display: 'flex' }}>
-              <img src={require('../img/bride.jpg')} style={{ borderRadius: 50, width: 100, height: 100, objectFit: 'cover' }} />
+            <div style={{ flexDirection: 'row', display: 'flex', textAlign: 'left' }}>
+              <img src={require('../img/bride.png')} style={{ borderRadius: 50, width: 100, height: 100, objectFit: 'cover' }} />
               <p style={{ marginLeft: 20 }} className={'parent-name'} >Putri<br />Bpk. Anton Joko Priyono <br />&<br /> Ibu Umi Sutarti</p>
             </div>
           </div>
@@ -42,7 +42,7 @@ class FirstPage extends React.Component {
             </div>
             <div style={{ flexDirection: 'row', display: 'flex', textAlign: 'right', justifyContent: 'flex-end' }}>
               <p style={{ marginRight: 20 }} className={'parent-name'}>Putra<br />Bpk. Sukatno <br />&<br /> Ibu Anik Yuniati</p>
-              <img src={require('../img/groom.jpg')} style={{ borderRadius: 50, width: 100, height: 100, objectFit: 'cover' }} />
+              <img src={require('../img/groom.png')} style={{ borderRadius: 50, width: 100, height: 100, objectFit: 'cover' }} />
             </div>
           </div>
         </div>

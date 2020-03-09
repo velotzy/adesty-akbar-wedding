@@ -9,7 +9,6 @@
 'use strict'
 
 import React from 'react'
-import GoogleMapReact from 'google-map-react'
 
 class ThirdPage extends React.Component {
   static defaultProps = {
@@ -31,9 +30,8 @@ class ThirdPage extends React.Component {
           style={{ border: '1px solid #ddd', borderRadius: 5 }}></iframe>
         </div>
         <a href={'https://goo.gl/maps/UskXUCimvezjqV7A9'}>
-
-          <button>
-            buka maps
+          <button style={{border: '1px solid #4A89F3', height: 40, width: 100, borderRadius: 20, backgroundColor: '#4A89F3', color: 'white'}}>
+            Buka Gmaps
           </button>
         </a>
       </div>
