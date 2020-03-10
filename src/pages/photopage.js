@@ -88,6 +88,7 @@ class PhotoPage extends React.Component {
           changeable
           noToolbar
           noImgDetails
+          className={'image-viewer'}
           // noFooter
           onMaskClick={() => { this.setState({visible: false}) }}
           onClose={() => { this.setState({visible: false}) }}

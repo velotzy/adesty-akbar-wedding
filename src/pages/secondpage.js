@@ -17,30 +17,32 @@ class SecondPage extends React.Component {
         <h1 style={{ color: '#000', fontSize: 15, marginBottom: 20, textAlign: 'center' }}>&#10070; RANGKAIAN ACARA &#10070;</h1>
         <div style={{ fontSize: 14, color: '#000' }}>
           <table style={{ width: '100%', marginBottom: 20 }}>
-            <tr>
-              <td />
-              <td style={{ textAlign: 'right', fontSize: 15, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, width: 100 }}>
-                <b>
-                  Sabtu
-                </b>
-              </td>
-              <td style={{ width: 50, textAlign: 'center' }}>
-                <div style={{ fontSize: 35, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, marginTop: -10, color: '#c79931' }}>
+            <tbody>
+              <tr>
+                <td />
+                <td style={{ textAlign: 'right', fontSize: 15, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, width: 100 }}>
                   <b>
-                    11
-                  </b>
-                </div>
-                <div style={{ marginTop: -7, marginBottom: -10 }}>
-                  2020
-                </div>
-              </td>
-              <td style={{ textAlign: 'left', fontSize: 15, paddingRight: 5, paddingLeft: 5, width: 100 }}>
-                <b>
-                  April
+                    Sabtu
                 </b>
-              </td>
-              <td />
-            </tr>
+                </td>
+                <td style={{ width: 50, textAlign: 'center' }}>
+                  <div style={{ fontSize: 35, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, marginTop: -10, color: '#c79931' }}>
+                    <b>
+                      11
+                  </b>
+                  </div>
+                  <div style={{ marginTop: -7, marginBottom: -10 }}>
+                    2020
+                </div>
+                </td>
+                <td style={{ textAlign: 'left', fontSize: 15, paddingRight: 5, paddingLeft: 5, width: 100 }}>
+                  <b>
+                    April
+                </b>
+                </td>
+                <td />
+              </tr>
+            </tbody>
           </table>
           <div style={{ color: '#c79931', padding: 5, fontSize: 18, textAlign: 'center' }}>Akad Nikah</div>
           <div style={{ fontSize: 12, textAlign: 'center' }}>

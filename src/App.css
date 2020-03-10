@@ -283,41 +283,47 @@ body {
 
 
     .first-photo {
-        max-width: 28%;
-        height: auto;
-        margin-right: 2%;
+        max-width: 25vw;
+        height: 30vw;
+        margin-right: 1vw;
     }
     .second-photo {
-        max-width: 70%;
-        height: auto;
+        max-width: 50vw;
+        height: 30vw;
     }
     .third-photo {
-        max-width: 58%;
-        height: auto;
-        margin-left: 2%
+        max-width: 39vw;
+        height: 19.5vw;
+        margin-left: 1vw
     }
     .fourth-photo {
-        max-width: 49%;
-        height: auto;
+        max-width: 35vw;
+        height: 21vw;
     }
     .fifth-photo {
-        max-width: 48%;
-        height: auto;
-        margin-left: 2%;
+        max-width: 40vw;
+        height: 22vw;
+        margin-left: 1vw;
     }
     .sixth-photo {
-        max-width: 100%;
-        height: auto;
+        max-width: 90vw;
+        height: 44vw;
+        display: flex;
+        align-self: flex-end;
     }
 
     .photo-text {
-        min-width: 39%;
-        height: auto;
+        max-width: 35vw;
+        height: 20vw;
         border: 1% solid;
         font-size: 5vw;
         justify-content: center;
         align-items: center;
         display: flex
+    }
+
+    #react-viewer-canvas {
+        background-color: #000;
     }
     
     .topic-wrapper {
