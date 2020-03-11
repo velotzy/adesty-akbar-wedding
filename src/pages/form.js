@@ -6,8 +6,6 @@
  *            href: string, }, ... ]    // Href to use for the entry
  */
 
-'use strict'
-
 import React from 'react'
 
 class FormPage extends React.Component {
@@ -16,19 +14,15 @@ class FormPage extends React.Component {
 
     this.state = {
       name: '',
-      words: 'words',
+      words: '',
       uid: '',
-      attendance: false,
+      attendance: '',
       sentData: false
     }
   }
 
-  componentDidMount () {
-    this.props.getData()
-  }
-
   render() {
-    const { sentData, name, attendance, words } = this.state
+    const { sentData, name, words } = this.state
     return (
       <div >
         <h1 style={{ color: '#000', fontSize: 15, marginBottom: 20, textAlign: 'center' }}>&#10070; UCAPAN & DOA &#10070;</h1>
@@ -46,7 +40,7 @@ class FormPage extends React.Component {
             <span className={'form-label'}>
               Konfirmasi kehadiran
             </span>
-            <select className={'select'} ref="attendance">
+            <select defaultValue={'Hadir'} className={'select'} ref="attendance">
               <option value={'Hadir'}>Ya</option>
               <option value={'Tidak Hadir'}>Tidak</option>
               <option value={'Belum Tahu'}>Belum tahu</option>
@@ -60,7 +54,7 @@ class FormPage extends React.Component {
           <br />
           "{words}" <br />
           <br />
-          kepada kedua Mempelai <br />
+          kepada kedua Mempelai. <br />
           Suatu kehormatan & Kebahagiaan bagi kami,<br />
           apabila Anda berkenan hadir <br />untuk memberikan do'a restu.
           </div>}
@@ -73,19 +67,22 @@ class FormPage extends React.Component {
     let name = this.refs.name.value;
     let words = this.refs.words.value;
     let attendance = this.refs.attendance.value
-
-    const data = {
-      name: name,
-      words: words,
-      attendance: attendance
+    if (name !== '' && words !== '' ) {
+      const data = {
+        name: name,
+        words: words,
+        attendance: attendance
+      }
+      this.setState({
+        name: name,
+        words: words,
+        attendance: attendance,
+        sentData: true
+      })
+      this.props.writeData(data)
+    } else {
+      alert('Harap lengkapi data yang dimasukkan')
     }
-    this.setState({
-      name: name,
-      words: words,
-      attendance: attendance,
-      sentData: true
-    })
-    this.props.writeData(data)
   }
 }
 

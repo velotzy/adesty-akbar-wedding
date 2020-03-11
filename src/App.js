@@ -25,21 +25,20 @@ class App extends Component {
 
     componentDidMount() {
         Firebase.initializeApp(config);
-        this.getData()
       }
       writeData = (data) => {
         Firebase.database().ref('/wedding-attendance').push(data);
         console.log('DATA SAVED');
       }
     
-      getData = () => {
-        let ref = Firebase.database().ref('/wedding-attendance');
-        ref.on('value', snapshot => {
-          const state = snapshot.val();
-          console.log('DATA RETRIEVED', state);
-        });
+    //   getData = () => {
+    //     let ref = Firebase.database().ref('/wedding-attendance');
+    //     ref.on('value', snapshot => {
+    //       const state = snapshot.val();
+    //       console.log('DATA RETRIEVED', state);
+    //     });
     
-      }
+    //   }
 
     transitionChanged = e => {
         this.setState({ [e.target.name]: e.target.value });
@@ -51,12 +50,12 @@ class App extends Component {
 
     render() {
 
-        const { transition, index } = this.state;
+        const { transition } = this.state;
 
         const children = [
             <div className="page cover">
                 <Cover />
-                <img src={require('./img/swipeup.gif')} style={{height: 30, width: 35, position: 'absolute', bottom: 10}} />
+                <img alt={''} src={require('./img/swipeup.gif')} style={{height: 30, width: 35, position: 'absolute', bottom: 10}} />
             </div>,
             <div className="page">
                 <Frame >

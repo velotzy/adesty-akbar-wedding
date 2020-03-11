@@ -26,11 +26,11 @@ class ThirdPage extends React.Component {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.221006278232!2d111.39153963474858!3d-7.1902999992401275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTEnMjUuMSJTIDExMcKwMjMnMzIuNiJF!5e0!3m2!1sen!2sid!4v1583665603450!5m2!1sen!2sid"
           width={'100%'}
-          height={400}
+          height={350}
           style={{ border: '1px solid #ddd', borderRadius: 5 }}></iframe>
         </div>
         <a href={'https://goo.gl/maps/UskXUCimvezjqV7A9'}>
-          <button style={{border: '1px solid #4A89F3', height: 25, width: 100, borderRadius: 20, backgroundColor: '#4A89F3', color: 'white'}}>
+          <button className={'send-button'} >
             Buka Gmaps
           </button>
         </a>
