@@ -15,38 +15,57 @@ import {
   isBrowser,
   isMobile
 } from 'react-device-detect'
+import ImageGallery from 'react-image-gallery';
 
 class PhotoPage extends React.Component {
   state = {
     visible: false,
     index: 0
   }
-  onPressImage=(index)=> {
+  onPressImage = (index) => {
     this.setState({
       visible: true,
       index: index
     })
   }
-  render () {
+  render() {
     const { visible, index } = this.state
     const images = [
       {
-        src: require('../img/listPhoto/pict_1.png')
+        src: require('../img/listPhoto/thumbnails/photo_1.jpg'),
+        original: require('../img/listPhoto/pict_1.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_1.jpg'),
+        sizes: '100%'
       },
       {
-        src: require('../img/listPhoto/pict_2.png')
+        src: require('../img/listPhoto/pict_2.png'),
+        original: require('../img/listPhoto/pict_2.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_2.jpg'),
+        sizes: '100%'
       },
       {
-        src: require('../img/listPhoto/pict_3.png')
+        src: require('../img/listPhoto/pict_3.png'),
+        original: require('../img/listPhoto/pict_3.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_3.jpg'),
+        sizes: '100%'
       },
       {
-        src: require('../img/listPhoto/pict_4.png')
+        src: require('../img/listPhoto/pict_4.png'),
+        original: require('../img/listPhoto/pict_4.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_4.jpg'),
+        sizes: '100%'
       },
       {
-        src: require('../img/listPhoto/pict_5.png')
+        src: require('../img/listPhoto/pict_5.png'),
+        original: require('../img/listPhoto/pict_5.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_5.jpg'),
+        sizes: '100%'
       },
       {
-        src: require('../img/listPhoto/pict_6.png')
+        src: require('../img/listPhoto/pict_6.png'),
+        original: require('../img/listPhoto/pict_6.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_6.jpg'),
+        sizes: '100%'
       },
     ]
     return (
@@ -94,6 +113,17 @@ class PhotoPage extends React.Component {
           onClose={() => { this.setState({visible: false}) }}
           images={images}
         />
+        {/* <div style={{ display: visible ? 'block' : 'none', zIndex: 1000, position: 'absolute' }} onClick={() => this.setState({ visible: false })}>
+          <div onClick={() => {}}>
+              <ImageGallery
+                showPlayButton={false}
+                showFullscreenButton={false}
+                showNav={false}
+                items={images}
+                startIndex={index}
+              />
+          </div>
+        </div> */}
       </div >
     )
   }
