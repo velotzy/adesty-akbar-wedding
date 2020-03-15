@@ -99,7 +99,9 @@ class App extends Component {
                 >
                     {children.map(child => child)}
                 </ReactSnapScroll>
-                <audio src={require('./sound/bg_music.mp3')} autoPlay />
+                <audio autoPlay loop>
+                    <source src={require('./sound/bg_music.mp3')} type="audio/mp3" />
+                </audio>
             </div>
         );
 
