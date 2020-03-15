@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ecd5d3a999ec241ef441",
-    "url": "/adesty-akbar-wedding/static/css/main.ca6fef75.chunk.css"
+    "revision": "dd27c04fbab3d7ead01e",
+    "url": "/adesty-akbar-wedding/static/css/main.9a44ad0f.chunk.css"
   },
   {
-    "revision": "ecd5d3a999ec241ef441",
-    "url": "/adesty-akbar-wedding/static/js/main.ecd5d3a9.chunk.js"
+    "revision": "dd27c04fbab3d7ead01e",
+    "url": "/adesty-akbar-wedding/static/js/main.dd27c04f.chunk.js"
   },
   {
     "revision": "e1c003cbd2034afe3ed8",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/adesty-akbar-wedding/static/media/bg_music.20a18522.mp3"
   },
   {
-    "revision": "6325b9dd5d0b0346cf06324b5eca3f81",
+    "revision": "b45966122790286a69a766eaba976b56",
     "url": "/adesty-akbar-wedding/index.html"
   }
 ];
