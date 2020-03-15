@@ -101,11 +101,11 @@ body {
 
 .send-button {
     margin-top: 20pt;
-    border: 1pt solid #4A89F3;
+    /* border: 1pt solid #4A89F3; */
     width: 150pt;
     height: 25pt;
     border-radius: 20pt;
-    background-color: #4A89F3;
+    background-color: #273345;
     color: white
 }
 

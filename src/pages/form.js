@@ -37,14 +37,14 @@ class FormPage extends React.Component {
               Ucapan & Doa
                 </span>
             <input type="text" ref='words' className="form-field text-area " placeholder="Ucapan & Doa" />
-            <span className={'form-label'}>
+            {/* <span className={'form-label'}>
               Konfirmasi kehadiran
             </span>
             <select defaultValue={'Hadir'} className={'select'} ref="attendance">
               <option value={'Hadir'}>Ya</option>
               <option value={'Tidak Hadir'}>Tidak</option>
               <option value={'Belum Tahu'}>Belum tahu</option>
-            </select>
+            </select> */}
           </div>
           <button type="submit" className="send-button">Kirim Ucapan & Doa</button>
         </form>
@@ -71,12 +71,12 @@ class FormPage extends React.Component {
       const data = {
         name: name,
         words: words,
-        attendance: attendance
+        // attendance: attendance
       }
       this.setState({
         name: name,
         words: words,
-        attendance: attendance,
+        // attendance: attendance,
         sentData: true
       })
       this.props.writeData(data)
