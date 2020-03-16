@@ -66,7 +66,6 @@ class FormPage extends React.Component {
     event.preventDefault();
     let name = this.refs.name.value;
     let words = this.refs.words.value;
-    let attendance = this.refs.attendance.value
     if (name !== '' && words !== '' ) {
       const data = {
         name: name,
