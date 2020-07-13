@@ -111,7 +111,7 @@ class App extends Component {
             <div className="page">
                 <Frame photo>
                     <PhotoPage />
-                </Frame>,
+                </Frame>
             </div>,
             <div className="page">
             <Frame>
