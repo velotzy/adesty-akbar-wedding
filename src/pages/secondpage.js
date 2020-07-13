@@ -9,11 +9,12 @@
 import React from 'react'
 
 class SecondPage extends React.Component {
-  render() {
+  render () {
     return (
       <div >
         <h1 style={{ color: '#000', fontSize: 15, marginBottom: 20, textAlign: 'center' }}>&#10070; RANGKAIAN ACARA &#10070;</h1>
         <div style={{ fontSize: 14, color: '#000' }}>
+          <div style={{ color: '#c79931', padding: 5, fontSize: 18, textAlign: 'center' }}>Akad Nikah</div>
           <table style={{ width: '100%', marginBottom: 20 }}>
             <tbody>
               <tr>
@@ -21,39 +22,67 @@ class SecondPage extends React.Component {
                 <td style={{ textAlign: 'right', fontSize: 15, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, width: 100 }}>
                   <b>
                     Sabtu
-                </b>
+                  </b>
                 </td>
                 <td style={{ width: 50, textAlign: 'center' }}>
                   <div style={{ fontSize: 35, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, marginTop: -10, color: '#c79931' }}>
                     <b>
                       11
-                  </b>
+                    </b>
                   </div>
                   <div style={{ marginTop: -7, marginBottom: -10 }}>
                     2020
-                </div>
+                  </div>
                 </td>
                 <td style={{ textAlign: 'left', fontSize: 15, paddingRight: 5, paddingLeft: 5, width: 100 }}>
                   <b>
                     April
-                </b>
+                  </b>
                 </td>
                 <td />
               </tr>
             </tbody>
           </table>
-          <div style={{ color: '#c79931', padding: 5, fontSize: 18, textAlign: 'center' }}>Akad Nikah</div>
           <div style={{ fontSize: 12, textAlign: 'center' }}>
             <div style={{ marginBottom: 5, fontSize: 14 }}>
-              09:00 WIB</div>
+              (Sudah Dilaksanakan)</div>
           </div>
         </div>
+
         <div style={{ fontSize: 14, color: '#000' }}>
-          <div style={{ color: '#c79931', padding: 5, fontSize: 18, textAlign: 'center' }}>Resepsi</div>
+          <div style={{ color: '#c79931', padding: 5, fontSize: 18, marginTop: 20, textAlign: 'center' }}>Resepsi</div>
+          <table style={{ width: '100%', marginBottom: 20 }}>
+            <tbody>
+              <tr>
+                <td />
+                <td style={{ textAlign: 'right', fontSize: 15, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, width: 100 }}>
+                  <b>
+                    Sabtu
+                  </b>
+                </td>
+                <td style={{ width: 50, textAlign: 'center' }}>
+                  <div style={{ fontSize: 35, paddingTop: 0, paddingBottom: 0, paddingRight: 5, paddingLeft: 5, marginTop: -10, color: '#c79931' }}>
+                    <b>
+                      25
+                    </b>
+                  </div>
+                  <div style={{ marginTop: -7, marginBottom: -10 }}>
+                    2020
+                  </div>
+                </td>
+                <td style={{ textAlign: 'left', fontSize: 15, paddingRight: 5, paddingLeft: 5, width: 100 }}>
+                  <b>
+                    Juli
+                  </b>
+                </td>
+                <td />
+              </tr>
+            </tbody>
+          </table>
           <div style={{ fontSize: 12, textAlign: 'center' }}>
             <div style={{ marginBottom: 5, fontSize: 14 }}>
-              11:00 - 14:00 WIB</div>
-            <div style={{ marginTop: 20, }}>
+              11:00 - 13:00 WIB</div>
+            <div style={{ marginTop: 20 }}>
               kediaman Keluarga Mempelai Wanita<br />
               Jl. Branjangan, Kedung Jaran, Wulung, Randublatung<br />
               Blora

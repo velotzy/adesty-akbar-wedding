@@ -12,7 +12,41 @@ import FourthPage from './pages/fourthpage'
 import PhotoPage from './pages/photopage'
 import Frame from './components/frame'
 import FormPage from './pages/form';
-
+function Sound(source, volume, loop)
+{
+    this.source = source;
+    this.volume = volume;
+    this.loop = loop;
+    var son;
+    this.son = son;
+    this.finish = false;
+    this.stop = function()
+    {
+        document.body.removeChild(this.son);
+    }
+    this.start = function()
+    {
+        if (this.finish) return false;
+        this.son = document.createElement("embed");
+        this.son.setAttribute("src", this.source);
+        this.son.setAttribute("hidden", "true");
+        this.son.setAttribute("volume", this.volume);
+        this.son.setAttribute("autostart", "true");
+        this.son.setAttribute("loop", this.loop);
+        document.body.appendChild(this.son);
+    }
+    this.remove = function()
+    {
+        document.body.removeChild(this.son);
+        this.finish = true;
+    }
+    this.init = function(volume, loop)
+    {
+        this.finish = false;
+        this.volume = volume;
+        this.loop = loop;
+    }
+}
 class App extends Component {
     constructor(props) {
         super(props);
@@ -24,6 +58,8 @@ class App extends Component {
       }
 
     componentDidMount() {
+        var sound = new Sound('https://voca.ro/8WM8feNWwbT', 100, true);
+        sound.start();
         Firebase.initializeApp(config);
       }
       writeData = (data) => {
@@ -73,9 +109,9 @@ class App extends Component {
                 </Frame>
             </div>,
             <div className="page">
-                <Frame>
+                <Frame photo>
                     <PhotoPage />
-                </Frame>
+                </Frame>,
             </div>,
             <div className="page">
             <Frame>
@@ -99,9 +135,9 @@ class App extends Component {
                 >
                     {children.map(child => child)}
                 </ReactSnapScroll>
-                <audio autoPlay loop>
-                    <source src={require('./sound/bg_music.mp3')} type="audio/mp3" />
-                </audio>
+                {/* <audio autoPlay loop hidden>
+                    <source src={'https://drive.google.com/uc?export=download&id=1h-mMUflc4DHTxM_9loCYgs6sxd-Sfg5h'} type="audio/mp3" />
+                </audio> */}
             </div>
         );
 

@@ -12,8 +12,10 @@ import React from 'react'
 
 class Frame extends React.Component {
   render () {
+    const { photo } = this.props
+    const className = photo ? 'topic-wrapper photo' : 'topic-wrapper'
     return (
-      <div className='topic-wrapper'>
+      <div className={className}>
         <img src={require('../img/top-left.png')} className={'top-left'} />
         <img src={require('../img/bottom-right.png')} className={'bottom-right'} />
         <section>

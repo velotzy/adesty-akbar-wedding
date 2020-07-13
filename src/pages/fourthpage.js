@@ -18,10 +18,13 @@ class FourthPage extends React.Component {
           <img src={require('../img/penutup1.png')} style={{ width: 140 }} /><br />
         </div>
         <div>
-          <p className={'intro-text'}>
-            Semoga Allah SWT memberi barokah dan menjadikan mempelai berdua dalam kebaikan keluarga sakinah, mawaddah dan warahmah.<br />
-            <i>Wasalammu'alaikum Warahmatulahi Wabarakatuh</i>
+          <p className={'closing-text'}>
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ<br />
           </p>
+          <p className={'closing-text-2'}>
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu merasa tenang dan tentram kepadanya, dan  dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir." <br /> (QS. Ar-Rum: 21)
+          </p>
+          <i className={'closing'}>Wasalammu'alaikum Warahmatulahi Wabarakatuh</i>
         </div>
         <div style={{ position: 'absolute', bottom: '10%', textAlign: 'center', borderWidth: 'solid' }}>
           <p className={'intro-text'}>

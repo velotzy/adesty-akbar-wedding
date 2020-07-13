@@ -4,9 +4,10 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-import 'react-image-gallery/styles/scss/image-gallery.scss'
-
-import 'react-image-gallery/styles/css/image-gallery.css'
+// import 'react-image-gallery/styles/scss/image-gallery.scss'
+// import 'react-image-gallery/styles/css/image-gallery.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 

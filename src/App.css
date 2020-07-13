@@ -34,8 +34,8 @@ body {
 }
 
 .first-photo {
-    max-width: 20%;
-    height: auto;
+    max-width: 70%;
+    height: 70%;
     margin-right: 0.5%
 }
 .second-photo {
@@ -167,6 +167,33 @@ body {
     text-align: center
 }
 
+.closing-text {
+    align-content: center;
+    text-align: right;
+    padding: 0% 10% 0% 10%;
+    line-height: 1.5;
+    font-size: 10pt;
+    color: #000;
+}
+
+.closing-text-2 {
+    align-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1;
+    font-size: 8pt;
+    color: #000;
+}
+
+.closing {
+    align-content: center;
+    text-align: center;
+    line-height: 2;
+    font-size: 8pt;
+    color: #000;
+}
+
 .brides-name {
     font-size: 14pt;
     margin-bottom: 0,;
@@ -207,6 +234,10 @@ body {
 
 .App .cover {
     background: #323232;
+}
+
+.photo {
+
 }
 
 .App .orange {
@@ -281,6 +312,33 @@ body {
         margin: 0 0 5px;
     }
 
+    .closing-text {
+        align-content: center;
+        text-align: right;
+        padding: 0%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        line-height: 2;
+        font-size: 8pt;
+        color: #000;
+        margin-bottom: 20pt;
+    }
+    .closing-text-2 {
+        align-content: center;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 6pt;
+        color: #000;
+    }
+
+    .closing {
+        align-content: center;
+        text-align: center;
+        line-height: 2;
+        font-size: 6pt;
+        color: #000;
+    }
 
     .first-photo {
         max-width: 25vw;

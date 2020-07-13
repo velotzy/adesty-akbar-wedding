@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /**
  * Implements a menu. Accepts the following properties:
  *
@@ -32,7 +33,7 @@ class PhotoPage extends React.Component {
     const { visible, index } = this.state
     const images = [
       {
-        src: require('../img/listPhoto/thumbnails/photo_1.jpg'),
+        src: require('../img/listPhoto/pict_1.png'),
         original: require('../img/listPhoto/pict_1.png'),
         thumbnail: require('../img/listPhoto/thumbnails/photo_1.jpg'),
         sizes: '100%'
@@ -91,13 +92,30 @@ class PhotoPage extends React.Component {
               <img onClick={() => this.onPressImage(4)} src={require('../img/listPhoto/thumbnails/photo_5.jpg')} className={'sixth-photo'} />
             </div>
           </div>
-          : <div>
-            <img onClick={() => this.onPressImage(0)} src={require('../img/listPhoto/thumbnails/photo_1.jpg')} className={'first-photo'} />
-            <img onClick={() => this.onPressImage(1)} src={require('../img/listPhoto/thumbnails/photo_2.jpg')} className={'second-photo'} />
-            <img onClick={() => this.onPressImage(2)} src={require('../img/listPhoto/thumbnails/photo_3.jpg')} className={'third-photo'} />
-            <img onClick={() => this.onPressImage(3)} src={require('../img/listPhoto/thumbnails/photo_4.jpg')} className={'fourth-photo'} />
-            <img onClick={() => this.onPressImage(5)} src={require('../img/listPhoto/thumbnails/photo_6.jpg')} className={'fifth-photo'} />
-            <img onClick={() => this.onPressImage(4)} src={require('../img/listPhoto/thumbnails/photo_5.jpg')} className={'sixth-photo'} />
+          : <div style={{ flexDirection: 'row', display: 'flex' }}>
+            <div style={{ flexDirection: 'column', display: 'flex', width: '33%', height: '100%' }}>
+                <img onClick={() => this.onPressImage(0)} src={require('../img/listPhoto/thumbnails/photo_1.jpg')} style={{ objectFit: 'cover', display: 'flex' }} />
+                <div style={{ display: 'flex', height: '100%' }}>
+                <img onClick={() => this.onPressImage(1)} src={require('../img/listPhoto/thumbnails/photo_2.jpg')} style={{ objectFit: 'cover' }} />
+              </div>
+            </div>
+            <div style={{ flexDirection: 'column', display: 'flex', width: '33%' }}>
+              
+              <div style={{ display: 'flex', height: '100%' }}>
+                <img onClick={() => this.onPressImage(2)} src={require('../img/listPhoto/thumbnails/photo_3.jpg')} style={{ objectFit: 'cover' }} />
+              </div>
+              <div style={{ display: 'flex', height: '100%' }}>
+                <img onClick={() => this.onPressImage(3)} src={require('../img/listPhoto/thumbnails/photo_4.jpg')} style={{ objectFit: 'cover' }} />
+              </div>
+            </div>
+            <div style={{ flexDirection: 'column', display: 'flex', width: '33%' }}>
+              <div style={{ display: 'flex', height: '100%' }}>
+                <img onClick={() => this.onPressImage(5)} src={require('../img/listPhoto/thumbnails/photo_6.jpg')} style={{ objectFit: 'cover' }} />
+              </div>
+              <div style={{ display: 'flex', height: '100%' }}>
+                <img onClick={() => this.onPressImage(4)} src={require('../img/listPhoto/thumbnails/photo_5.jpg')} style={{ objectFit: 'cover' }} />
+              </div>
+            </div>
           </div>}
         <Viewer
           visible={visible}
@@ -109,8 +127,8 @@ class PhotoPage extends React.Component {
           noImgDetails
           className={'image-viewer'}
           // noFooter
-          onMaskClick={() => { this.setState({visible: false}) }}
-          onClose={() => { this.setState({visible: false}) }}
+          onMaskClick={() => { this.setState({ visible: false }) }}
+          onClose={() => { this.setState({ visible: false }) }}
           images={images}
         />
         {/* <div style={{ display: visible ? 'block' : 'none', zIndex: 1000, position: 'absolute' }} onClick={() => this.setState({ visible: false })}>
