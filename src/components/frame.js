@@ -6,8 +6,6 @@
  * children: The content of the topic
  */
 
-'use strict'
-
 import React from 'react'
 
 class Frame extends React.Component {

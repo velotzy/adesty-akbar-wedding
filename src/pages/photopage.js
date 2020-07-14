@@ -7,7 +7,7 @@
  *            href: string, }, ... ]    // Href to use for the entry
  */
 
-'use strict'
+
 
 import React from 'react'
 
@@ -33,9 +33,9 @@ class PhotoPage extends React.Component {
     const { visible, index } = this.state
     const images = [
       {
-        src: require('../img/listPhoto/pict_1.png'),
-        original: require('../img/listPhoto/pict_1.png'),
-        thumbnail: require('../img/listPhoto/thumbnails/photo_1.jpg'),
+        src: require('../img/listPhoto/pict_7.png'),
+        original: require('../img/listPhoto/pict_7.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_7.jpg'),
         sizes: '100%'
       },
       {
@@ -63,9 +63,9 @@ class PhotoPage extends React.Component {
         sizes: '100%'
       },
       {
-        src: require('../img/listPhoto/pict_6.png'),
-        original: require('../img/listPhoto/pict_6.png'),
-        thumbnail: require('../img/listPhoto/thumbnails/photo_6.jpg'),
+        src: require('../img/listPhoto/pict_8.png'),
+        original: require('../img/listPhoto/pict_8.png'),
+        thumbnail: require('../img/listPhoto/thumbnails/photo_8.jpg'),
         sizes: '100%'
       },
     ]
@@ -75,7 +75,7 @@ class PhotoPage extends React.Component {
         {isMobile
           ? <div >
             <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
-              <img onClick={() => this.onPressImage(0)} src={require('../img/listPhoto/thumbnails/photo_1.jpg')} className={'first-photo'} />
+              <img onClick={() => this.onPressImage(0)} src={require('../img/listPhoto/thumbnails/photo_7.jpg')} className={'first-photo'} />
               <img onClick={() => this.onPressImage(1)} src={require('../img/listPhoto/thumbnails/photo_2.jpg')} className={'second-photo'} />
             </div>
             <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
@@ -86,7 +86,7 @@ class PhotoPage extends React.Component {
             </div>
             <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
               <img onClick={() => this.onPressImage(3)} src={require('../img/listPhoto/thumbnails/photo_4.jpg')} className={'fourth-photo'} />
-              <img onClick={() => this.onPressImage(5)} src={require('../img/listPhoto/thumbnails/photo_6.jpg')} className={'fifth-photo'} />
+              <img onClick={() => this.onPressImage(5)} src={require('../img/listPhoto/thumbnails/photo_8.jpg')} className={'fifth-photo'} />
             </div>
             <div style={{ flexDirection: 'row', display: 'flex', marginBottom: '2%' }}>
               <img onClick={() => this.onPressImage(4)} src={require('../img/listPhoto/thumbnails/photo_5.jpg')} className={'sixth-photo'} />
@@ -94,7 +94,7 @@ class PhotoPage extends React.Component {
           </div>
           : <div style={{ flexDirection: 'row', display: 'flex' }}>
             <div style={{ flexDirection: 'column', display: 'flex', width: '33%', height: '100%' }}>
-                <img onClick={() => this.onPressImage(0)} src={require('../img/listPhoto/thumbnails/photo_1.jpg')} style={{ objectFit: 'cover', display: 'flex' }} />
+                <img onClick={() => this.onPressImage(0)} src={require('../img/listPhoto/thumbnails/photo_7.jpg')} style={{ objectFit: 'cover', display: 'flex' }} />
                 <div style={{ display: 'flex', height: '100%' }}>
                 <img onClick={() => this.onPressImage(1)} src={require('../img/listPhoto/thumbnails/photo_2.jpg')} style={{ objectFit: 'cover' }} />
               </div>
@@ -110,7 +110,7 @@ class PhotoPage extends React.Component {
             </div>
             <div style={{ flexDirection: 'column', display: 'flex', width: '33%' }}>
               <div style={{ display: 'flex', height: '100%' }}>
-                <img onClick={() => this.onPressImage(5)} src={require('../img/listPhoto/thumbnails/photo_6.jpg')} style={{ objectFit: 'cover' }} />
+                <img onClick={() => this.onPressImage(5)} src={require('../img/listPhoto/thumbnails/photo_8.jpg')} style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ display: 'flex', height: '100%' }}>
                 <img onClick={() => this.onPressImage(4)} src={require('../img/listPhoto/thumbnails/photo_5.jpg')} style={{ objectFit: 'cover' }} />

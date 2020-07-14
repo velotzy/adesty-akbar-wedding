@@ -89,39 +89,38 @@ class App extends Component {
         const { transition } = this.state;
 
         const children = [
-            <div className="page cover">
+            <div key={'cover'} className="page cover">
                 <Cover />
                 <img alt={''} src={require('./img/swipeup.gif')} style={{height: 30, width: 35, position: 'absolute', bottom: 10}} />
             </div>,
-            <div className="page">
+            <div key={'page1'} className="page">
                 <Frame >
                     <FirstPage />
                 </Frame>
             </div>,
-            <div className="page">
+            <div key={'page2'} className="page">
                 <Frame >
                     <SecondPage />
                 </Frame>
             </div>,
-            <div className="page">
+            <div key={'page3'} className="page">
                 <Frame>
                     <ThirdPage />
                 </Frame>
             </div>,
-            <div className="page">
+            <div key={'page4'} className="page">
                 <Frame photo>
                     <PhotoPage />
                 </Frame>
             </div>,
-            <div className="page">
+            <div key={'page5'} className="page">
             <Frame>
                 <FormPage 
-                    getData={this.getData}
                     writeData={this.writeData}
                 />
             </Frame>
         </div>,
-            <div className="page">
+            <div key={'page6'} className="page">
                 <Frame>
                     <FourthPage />
                 </Frame>

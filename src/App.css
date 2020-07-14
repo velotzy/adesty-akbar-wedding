@@ -148,6 +148,13 @@ body {
     margin: 0px 0px 0px 0px;
 }
 
+.photo-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .top-left {
     position: absolute;
     top: 3%;

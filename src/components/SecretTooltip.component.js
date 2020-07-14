@@ -3,7 +3,7 @@
  * hover time. This is useful for cases where one doesn't want the tooltip's content to be easily accessible to crawlers.
  */
 
-'use strict';
+;
 
 import React from 'react';
 

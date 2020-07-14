@@ -6,8 +6,6 @@
  *            href: string, }, ... ]    // Href to use for the entry
  */
 
-'use strict'
-
 import React from 'react'
 
 class ThirdPage extends React.Component {
