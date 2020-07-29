@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/adesty-akbar-wedding/precache-manifest.72c75e9d7c98bf5fc76f691e44ab2a95.js"
+  "/adesty-akbar-wedding/precache-manifest.c72c7d0098ea11219650b7f105e342e1.js"
 );
 
 workbox.clientsClaim();
